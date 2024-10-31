@@ -86,6 +86,9 @@
             </plugin>
 
             <!-- Jacoco Maven Plugin for test coverage -->
+            <!-- Jacoco Maven Plugin for test coverage -->
+            <!-- Jacoco Maven Plugin for test coverage -->
+            <!-- Jacoco Maven Plugin for test coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -101,11 +104,14 @@
                         <phase>test</phase>
                         <goals>
                             <goal>report</goal>
-                            <goal>report-aggregate</goal>
                         </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/site/jacoco</outputDirectory>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
+
 
             <!-- SonarQube Plugin for code analysis -->
             <plugin>
