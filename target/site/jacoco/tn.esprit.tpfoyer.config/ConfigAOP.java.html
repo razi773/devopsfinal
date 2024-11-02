@@ -23,7 +23,7 @@ import org.springframework.stereotype.Component;
 
     @After(&quot;execution(* tn.esprit.tpfoyer.service.*.add*(..))&quot;)
     public void logMethodOut(JoinPoint joinPoint) {
-<span class="nc" id="L26">        String name = joinPoint.getSignature().getName();</span>
+
 <span class="nc" id="L27">        log.info(&quot;Execution Réussie ! &quot;);</span>
 <span class="nc" id="L28">    }</span>
 

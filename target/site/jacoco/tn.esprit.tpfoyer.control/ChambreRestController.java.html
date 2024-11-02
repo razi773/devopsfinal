@@ -15,46 +15,44 @@ public class ChambreRestController {
 
     IChambreService chambreService;
 
-// http://localhost:8089/tpfoyer/chambre/retrieve-all-chambres
+
      @GetMapping(&quot;/retrieve-all-chambres&quot;)
     public List&lt;Chambre&gt; getChambres() {
-<span class="nc" id="L21">        List&lt;Chambre&gt; listChambres = chambreService.retrieveAllChambres();</span>
-<span class="nc" id="L22">        return listChambres;</span>
+
+<span class="nc" id="L22">        return chambreService.retrieveAllChambres();</span>
     }
 
 
 
     @GetMapping(&quot;/retrieve-chambre/{chambre-id}&quot;)
     public Chambre retrieveChambre(@PathVariable(&quot;chambre-id&quot;) Long chId) {
-<span class="nc" id="L29">        Chambre chambre = chambreService.retrieveChambre(chId);</span>
-<span class="nc" id="L30">        return chambre;</span>
+<span class="nc" id="L29">        return chambreService.retrieveChambre(chId);</span>
     }
 
-    // http://localhost:8089/tpfoyer/chambre/add-chambre
+
     @PostMapping(&quot;/add-chambre&quot;)
     public Chambre addChambre(@RequestBody Chambre c) {
-<span class="nc" id="L36">        Chambre chambre = chambreService.addChambre(c);</span>
-<span class="nc" id="L37">        return chambre;</span>
+<span class="nc" id="L35">        return chambreService.addChambre(c);</span>
     }
 
-    // http://localhost:8089/tpfoyer/chambre/remove-chambre/{chambre-id}
+
     @DeleteMapping(&quot;/remove-chambre/{chambre-id}&quot;)
     public void removeChambre(@PathVariable(&quot;chambre-id&quot;) Long chId) {
-<span class="nc" id="L43">        chambreService.removeChambre(chId);</span>
-<span class="nc" id="L44">    }</span>
+<span class="nc" id="L41">        chambreService.removeChambre(chId);</span>
+<span class="nc" id="L42">    }</span>
 
     // http://localhost:8089/tpfoyer/chambre/modify-chambre
     @PutMapping(&quot;/modify-chambre&quot;)
     public Chambre modifyChambre(@RequestBody Chambre c) {
-<span class="nc" id="L49">        Chambre chambre = chambreService.modifyChambre(c);</span>
-<span class="nc" id="L50">        return chambre;</span>
+
+<span class="nc" id="L48">        return chambreService.modifyChambre(c);</span>
     }
 
 
     @GetMapping(&quot;/trouver-chambres-selon-typ/{tc}&quot;)
     public List&lt;Chambre&gt; trouverChSelonTC(@PathVariable(&quot;tc&quot;) TypeChambre tc)
     {
-<span class="nc" id="L57">        return chambreService.recupererChambresSelonTyp(tc);</span>
+<span class="nc" id="L55">        return chambreService.recupererChambresSelonTyp(tc);</span>
     }
 
 
@@ -76,8 +74,7 @@ public class ChambreRestController {
     // http://localhost:8089/tpfoyer/chambre/retrieve-chambre/8
     @GetMapping(&quot;/trouver-chambre-selon-etudiant/{cin}&quot;)
     public Chambre trouverChSelonEt(@PathVariable(&quot;cin&quot;) long cin) {
-<span class="nc" id="L79">        Chambre chambre = chambreService.trouverchambreSelonEtudiant(cin);</span>
-<span class="nc" id="L80">        return chambre;</span>
+<span class="nc" id="L77">        return chambreService.trouverchambreSelonEtudiant(cin);</span>
     }
 
 
