@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f71b225-4a91-4591-8835-5d0365c5e4af" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/TpFoyerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/TpFoyerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/config/ConfigAOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/config/ConfigAOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/entity/Bloc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/entity/Bloc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="4f71b225-4a91-4591-8835-5d0365c5e4af" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +129,7 @@
       <workItem from="1730392726487" duration="1762000" />
       <workItem from="1730394508116" duration="2382000" />
       <workItem from="1730481691456" duration="1755000" />
+      <workItem from="1730494321377" duration="623000" />
     </task>
     <servers />
   </component>
