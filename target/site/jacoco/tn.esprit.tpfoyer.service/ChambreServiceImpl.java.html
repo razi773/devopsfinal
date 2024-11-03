@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ChambreServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DevOps_Project</a> &gt; <a href="index.source.html" class="el_package">tn.esprit.tpfoyer.service</a> &gt; <span class="el_source">ChambreServiceImpl.java</span></div><h1>ChambreServiceImpl.java</h1><pre class="source lang-java linenums">package tn.esprit.tpfoyer.service;
+
+
+
+import jakarta.persistence.EntityNotFoundException;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import tn.esprit.tpfoyer.entity.Chambre;
+import tn.esprit.tpfoyer.entity.TypeChambre;
+import tn.esprit.tpfoyer.repository.ChambreRepository;
+
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+<span class="nc" id="L18">@AllArgsConstructor</span>
+<span class="nc" id="L19">@Slf4j</span>
+public class ChambreServiceImpl implements IChambreService {
+
+    ChambreRepository chambreRepository;
+
+    public List&lt;Chambre&gt; retrieveAllChambres() {
+<span class="nc" id="L25">        log.info(&quot;In Methodo retrieveAllChambres : &quot;);</span>
+<span class="nc" id="L26">        List&lt;Chambre&gt; listC = chambreRepository.findAll();</span>
+<span class="nc" id="L27">        log.info(&quot;Out of retrieveAllChambres : &quot;);</span>
+
+<span class="nc" id="L29">        return listC;</span>
+    }
+
+    public Chambre retrieveChambre(Long chambreId) {
+<span class="nc" id="L33">        Optional&lt;Chambre&gt; chambreOptional = chambreRepository.findById(chambreId);</span>
+
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        if (chambreOptional.isPresent()) {</span>
+<span class="nc" id="L36">            return chambreOptional.get();</span>
+        } else {
+            // Handle the case where the chambre is not found
+<span class="nc" id="L39">            throw new EntityNotFoundException(&quot;Chambre not found with ID: &quot; + chambreId);</span>
+        }
+    }
+
+    public Chambre addChambre(Chambre c) {
+
+<span class="nc" id="L45">        return chambreRepository.save(c);</span>
+    }
+
+    public Chambre modifyChambre(Chambre c) {
+
+<span class="nc" id="L50">        return chambreRepository.save(c);</span>
+    }
+
+    public void removeChambre(Long chambreId) {
+<span class="nc" id="L54">        chambreRepository.deleteById(chambreId);</span>
+<span class="nc" id="L55">    }</span>
+
+
+
+
+
+
+
+    public List&lt;Chambre&gt; recupererChambresSelonTyp(TypeChambre tc)
+    {
+<span class="nc" id="L65">        return chambreRepository.findAllByTypeC(tc);</span>
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public Chambre trouverchambreSelonEtudiant(long cin) {
+       //
+
+<span class="nc" id="L92">        return chambreRepository.trouverChselonEt(cin);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

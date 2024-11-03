@@ -2,6 +2,7 @@ package tn.esprit.tpfoyer.service;
 
 
 
+import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,7 @@ import tn.esprit.tpfoyer.entity.Chambre;
 import tn.esprit.tpfoyer.entity.TypeChambre;
 import tn.esprit.tpfoyer.repository.ChambreRepository;
 
-import javax.persistence.EntityNotFoundException;
+
 import java.util.List;
 import java.util.Optional;
 
