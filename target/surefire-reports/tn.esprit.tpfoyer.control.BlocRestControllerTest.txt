@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: tn.esprit.tpfoyer.control.BlocRestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.043 s -- in tn.esprit.tpfoyer.control.BlocRestControllerTest

@@ -24,7 +24,7 @@ public class BlocRestController {
     @GetMapping(&quot;/retrieve-all-blocs&quot;)
     @Operation(description = &quot;WS de récuperation de tous les Blocs &quot;)
     public List&lt;Bloc&gt; getBlocs() {
-<span class="nc" id="L27">        return blocService.retrieveAllBlocs();</span>
+<span class="fc" id="L27">        return blocService.retrieveAllBlocs();</span>
 
     }
 
@@ -33,33 +33,33 @@ public class BlocRestController {
     @GetMapping(&quot;/retrieve-bloc/{bloc-id}&quot;)
     public Bloc retrieveBloc(@PathVariable(&quot;bloc-id&quot;) Long bId) {
 
-<span class="nc" id="L36">        return  blocService.retrieveBloc(bId);</span>
+<span class="fc" id="L36">        return  blocService.retrieveBloc(bId);</span>
 
     }
 
     // http://localhost:8089/tpfoyer/bloc/add-bloc
     @PostMapping(&quot;/add-bloc&quot;)
     public Bloc addBloc(@RequestBody Bloc c) {
-<span class="nc" id="L43">        return blocService.addBloc(c);</span>
+<span class="fc" id="L43">        return blocService.addBloc(c);</span>
     }
 
 
     @DeleteMapping(&quot;/remove-bloc/{bloc-id}&quot;)
     public void removeBloc(@PathVariable(&quot;bloc-id&quot;) Long chId) {
-<span class="nc" id="L49">        blocService.removeBloc(chId);</span>
-<span class="nc" id="L50">    }</span>
+<span class="fc" id="L49">        blocService.removeBloc(chId);</span>
+<span class="fc" id="L50">    }</span>
 
     // http://localhost:8089/tpfoyer/bloc/modify-bloc
     @PutMapping(&quot;/modify-bloc&quot;)
     public Bloc modifyBloc(@RequestBody Bloc c) {
 
-<span class="nc" id="L56">        return blocService.modifyBloc(c);</span>
+<span class="fc" id="L56">        return blocService.modifyBloc(c);</span>
     }
 
     @GetMapping(&quot;/trouver-blocs-sans-foyer&quot;)
     public List&lt;Bloc&gt; getBlocswirhoutFoyer() {
 
-<span class="nc" id="L62">        return blocService.trouverBlocsSansFoyer();</span>
+<span class="fc" id="L62">        return blocService.trouverBlocsSansFoyer();</span>
     }
 
     @GetMapping(&quot;/get-bloc-nb-c/{nb}/{c}&quot;)
@@ -67,7 +67,7 @@ public class BlocRestController {
             @PathVariable(&quot;nb&quot;) String nb,
             @PathVariable(&quot;c&quot;) long c) {
 
-<span class="nc" id="L70">        return blocService.trouverBlocsParNomEtCap(nb, c);</span>
+<span class="fc" id="L70">        return blocService.trouverBlocsParNomEtCap(nb, c);</span>
 
     }
 

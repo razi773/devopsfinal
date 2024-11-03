@@ -21,10 +21,10 @@ public class UniversiteServiceImpl implements IUniversiteService {
     }
 
     public Universite retrieveUniversite(Long universiteId) {
-<span class="fc" id="L24">        Optional&lt;Universite&gt; universiteOptional = universiteRepository.findById(universiteId);</span>
+<span class="nc" id="L24">        Optional&lt;Universite&gt; universiteOptional = universiteRepository.findById(universiteId);</span>
 
-<span class="pc bpc" id="L26" title="1 of 2 branches missed.">        if (universiteOptional.isPresent()) {</span>
-<span class="fc" id="L27">            return universiteOptional.get();</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">        if (universiteOptional.isPresent()) {</span>
+<span class="nc" id="L27">            return universiteOptional.get();</span>
         } else {
             // Handle the case where the universite is not found
 <span class="nc" id="L30">            throw new EntityNotFoundException(&quot;Universite not found with ID: &quot; + universiteId);</span>
