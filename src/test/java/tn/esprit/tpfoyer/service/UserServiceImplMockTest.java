@@ -1,6 +1,6 @@
-package tn.esprit.tpfoyer.service;
+package tn.esprit.tpfoyer.control;
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -8,66 +8,130 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.tpfoyer.entity.Bloc;
-import tn.esprit.tpfoyer.entity.Chambre;
-import tn.esprit.tpfoyer.entity.Universite;
-import tn.esprit.tpfoyer.repository.UniversiteRepository;
+import tn.esprit.tpfoyer.service.IBlocService;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class UniversityServiceImplMockTest {
+class BlocRestControllerTest {
 
     @Mock
-    UniversiteRepository universiteRepository;
+    IBlocService blocService;
 
     @InjectMocks
-    UniversiteServiceImpl universiteService;
+    BlocRestController blocRestController;
 
-    Universite universite = new Universite("f1", "l1", "adresse1");
+    private Bloc bloc;
+    private List<Bloc> blocs;
 
-    List<Universite> listUsers = new ArrayList<Universite>() {
-        {
-            add(new Universite("f2", "nom1", "adresse2"));
-            add(new Universite("f3", "nom2", "adresse3"));
-        }
-    };
+    @BeforeEach
+    void setUp() {
+        bloc = new Bloc();
+        bloc.setIdBloc(1L);
+        bloc.setNomBloc("Bloc A");
+        bloc.setCapaciteBloc(100L);
 
-    @Test
-    void testRetrieveUser() {
-        Mockito.when(universiteRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(universite));
-        Universite user1 = universiteService.retrieveUniversite(2L);
-        Assertions.assertNotNull(user1);
+        blocs = new ArrayList<>();
+        blocs.add(bloc);
     }
 
-    // Nouveau test pour la classe Bloc
     @Test
-    void testBlocChambresAssociation() {
-        // Création d'un bloc
-        Bloc bloc = new Bloc();
-        bloc.setNomBloc("Bloc A");
+    void testGetBlocs() {
+        // Simulation du comportement du service
+        when(blocService.retrieveAllBlocs()).thenReturn(blocs);
 
-        // Création de chambres
-        Chambre chambre1 = new Chambre();
-        chambre1.setBloc(bloc);
+        // Appel de la méthode du contrôleur
+        List<Bloc> retrievedBlocs = blocRestController.getBlocs();
 
-        Chambre chambre2 = new Chambre();
-        chambre2.setBloc(bloc);
+        // Vérifications
+        assertNotNull(retrievedBlocs);
+        assertEquals(1, retrievedBlocs.size());
+        verify(blocService, times(1)).retrieveAllBlocs();
+    }
 
-        // Ajout des chambres au bloc
-        Set<Chambre> chambres = new HashSet<>();
-        chambres.add(chambre1);
-        chambres.add(chambre2);
+    @Test
+    void testRetrieveBloc() {
+        // Simulation du comportement du service
+        when(blocService.retrieveBloc(1L)).thenReturn(bloc);
 
-        bloc.setChambres(chambres);
+        // Appel de la méthode du contrôleur
+        Bloc retrievedBloc = blocRestController.retrieveBloc(1L);
 
-        // Vérification que les chambres sont associées au bloc
-        Assertions.assertNotNull(bloc.getChambres());
-        Assertions.assertEquals(2, bloc.getChambres().size());
-        Assertions.assertTrue(bloc.getChambres().contains(chambre1));
-        Assertions.assertTrue(bloc.getChambres().contains(chambre2));
+        // Vérifications
+        assertNotNull(retrievedBloc);
+        assertEquals(1L, retrievedBloc.getIdBloc());
+        assertEquals("Bloc A", retrievedBloc.getNomBloc());
+        verify(blocService, times(1)).retrieveBloc(1L);
+    }
+
+    @Test
+    void testAddBloc() {
+        // Simulation du comportement du service
+        when(blocService.addBloc(bloc)).thenReturn(bloc);
+
+        // Appel de la méthode du contrôleur
+        Bloc addedBloc = blocRestController.addBloc(bloc);
+
+        // Vérifications
+        assertNotNull(addedBloc);
+        assertEquals(bloc.getNomBloc(), addedBloc.getNomBloc());
+        verify(blocService, times(1)).addBloc(bloc);
+    }
+
+    @Test
+    void testRemoveBloc() {
+        // Appel de la méthode du contrôleur
+        blocRestController.removeBloc(1L);
+
+        // Vérification que la méthode du service a été appelée
+        verify(blocService, times(1)).removeBloc(1L);
+    }
+
+    @Test
+    void testModifyBloc() {
+        // Simulation du comportement du service
+        when(blocService.modifyBloc(bloc)).thenReturn(bloc);
+
+        // Appel de la méthode du contrôleur
+        Bloc modifiedBloc = blocRestController.modifyBloc(bloc);
+
+        // Vérifications
+        assertNotNull(modifiedBloc);
+        assertEquals(bloc.getNomBloc(), modifiedBloc.getNomBloc());
+        verify(blocService, times(1)).modifyBloc(bloc);
+    }
+
+    @Test
+    void testGetBlocWithoutFoyer() {
+        // Simulation du comportement du service
+        when(blocService.trouverBlocsSansFoyer()).thenReturn(blocs);
+
+        // Appel de la méthode du contrôleur
+        List<Bloc> retrievedBlocs = blocRestController.getBlocswirhoutFoyer();
+
+        // Vérifications
+        assertNotNull(retrievedBlocs);
+        assertEquals(1, retrievedBlocs.size());
+        verify(blocService, times(1)).trouverBlocsSansFoyer();
+    }
+
+    @Test
+    void testRecuperBlocsParNomEtCap() {
+        // Simulation du comportement du service
+        when(blocService.trouverBlocsParNomEtCap("Bloc A", 100L)).thenReturn(blocs);
+
+        // Appel de la méthode du contrôleur
+        List<Bloc> retrievedBlocs = blocRestController.recuperBlocsParNomEtCap("Bloc A", 100L);
+
+        // Vérifications
+        assertNotNull(retrievedBlocs);
+        assertEquals(1, retrievedBlocs.size());
+        assertEquals("Bloc A", retrievedBlocs.get(0).getNomBloc());
+        assertEquals(100L, retrievedBlocs.get(0).getCapaciteBloc());
+        verify(blocService, times(1)).trouverBlocsParNomEtCap("Bloc A", 100L);
     }
 }
