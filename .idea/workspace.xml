@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f71b225-4a91-4591-8835-5d0365c5e4af" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer/service/UserServiceImplMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer/service/UserServiceImplMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/control/ChambreRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/control/ChambreRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +135,7 @@
       <workItem from="1730481691456" duration="1755000" />
       <workItem from="1730494321377" duration="623000" />
       <workItem from="1730586629012" duration="619000" />
-      <workItem from="1730652438000" duration="4306000" />
+      <workItem from="1730652438000" duration="6218000" />
     </task>
     <servers />
   </component>
