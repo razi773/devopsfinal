@@ -18,52 +18,41 @@ public class EtudiantRestController {
 
     @GetMapping(&quot;/retrieve-all-etudiants&quot;)
     public List&lt;Etudiant&gt; getEtudiants() {
-<span class="nc" id="L21">        List&lt;Etudiant&gt; listEtudiants = etudiantService.retrieveAllEtudiants();</span>
-<span class="nc" id="L22">        return listEtudiants;</span>
+<span class="nc" id="L21">        return etudiantService.retrieveAllEtudiants();</span>
     }
-
-
-
-
-
-
-
-
-
-
 
 
     @GetMapping(&quot;/retrieve-etudiant-cin/{cin}&quot;)
     public Etudiant retrieveEtudiantParCin(@PathVariable(&quot;cin&quot;) Long cin) {
-<span class="nc" id="L38">        Etudiant etudiant = etudiantService.recupererEtudiantParCin(cin);</span>
-<span class="nc" id="L39">        return etudiant;</span>
+
+<span class="nc" id="L28">        return etudiantService.recupererEtudiantParCin(cin);</span>
     }
 
 
     @GetMapping(&quot;/retrieve-etudiant/{etudiant-id}&quot;)
     public Etudiant retrieveEtudiant(@PathVariable(&quot;etudiant-id&quot;) Long chId) {
-<span class="nc" id="L45">        Etudiant etudiant = etudiantService.retrieveEtudiant(chId);</span>
-<span class="nc" id="L46">        return etudiant;</span>
+
+<span class="nc" id="L35">        return etudiantService.retrieveEtudiant(chId);</span>
     }
 
     // http://localhost:8089/tpfoyer/etudiant/add-etudiant
     @PostMapping(&quot;/add-etudiant&quot;)
     public Etudiant addEtudiant(@RequestBody Etudiant c) {
-<span class="nc" id="L52">        Etudiant etudiant = etudiantService.addEtudiant(c);</span>
-<span class="nc" id="L53">        return etudiant;</span>
+
+<span class="nc" id="L42">        return etudiantService.addEtudiant(c);</span>
     }
 
-    // http://localhost:8089/tpfoyer/etudiant/remove-etudiant/{etudiant-id}
+
     @DeleteMapping(&quot;/remove-etudiant/{etudiant-id}&quot;)
     public void removeEtudiant(@PathVariable(&quot;etudiant-id&quot;) Long chId) {
-<span class="nc" id="L59">        etudiantService.removeEtudiant(chId);</span>
-<span class="nc" id="L60">    }</span>
+<span class="nc" id="L48">        etudiantService.removeEtudiant(chId);</span>
+<span class="nc" id="L49">    }</span>
 
-    // http://localhost:8089/tpfoyer/etudiant/modify-etudiant
+
     @PutMapping(&quot;/modify-etudiant&quot;)
     public Etudiant modifyEtudiant(@RequestBody Etudiant c) {
-<span class="nc" id="L65">        Etudiant etudiant = etudiantService.modifyEtudiant(c);</span>
-<span class="nc" id="L66">        return etudiant;</span>
+
+<span class="nc" id="L55">        return etudiantService.modifyEtudiant(c);</span>
     }
 
 

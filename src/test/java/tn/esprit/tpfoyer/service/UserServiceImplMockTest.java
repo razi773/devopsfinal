@@ -37,7 +37,7 @@ class UniversityServiceImplMockTest {
     };
 
     @Test
-     void testRetrieveUser() {
+    void testRetrieveUser() {
         Mockito.when(universiteRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(universite));
         Universite user1 = universiteService.retrieveUniversite(2L);
         Assertions.assertNotNull(user1);
@@ -45,7 +45,7 @@ class UniversityServiceImplMockTest {
 
     // Nouveau test pour la classe Bloc
     @Test
-     void testBlocChambresAssociation() {
+    void testBlocChambresAssociation() {
         // Création d'un bloc
         Bloc bloc = new Bloc();
         bloc.setNomBloc("Bloc A");

@@ -17,24 +17,24 @@ public class FoyerRestController {
     // http://localhost:8089/tpfoyer/foyer/retrieve-all-foyers
     @GetMapping(&quot;/retrieve-all-foyers&quot;)
     public List&lt;Foyer&gt; getFoyers() {
-<span class="nc" id="L20">        List&lt;Foyer&gt; listFoyers = foyerService.retrieveAllFoyers();</span>
-<span class="nc" id="L21">        return listFoyers;</span>
+
+<span class="nc" id="L21">        return foyerService.retrieveAllFoyers();</span>
     }
     // http://localhost:8089/tpfoyer/foyer/retrieve-foyer/8
     @GetMapping(&quot;/retrieve-foyer/{foyer-id}&quot;)
     public Foyer retrieveFoyer(@PathVariable(&quot;foyer-id&quot;) Long fId) {
-<span class="nc" id="L26">        Foyer foyer = foyerService.retrieveFoyer(fId);</span>
-<span class="nc" id="L27">        return foyer;</span>
+
+<span class="nc" id="L27">        return foyerService.retrieveFoyer(fId);</span>
     }
 
     // http://localhost:8089/tpfoyer/foyer/add-foyer
     @PostMapping(&quot;/add-foyer&quot;)
     public Foyer addFoyer(@RequestBody Foyer f) {
-<span class="nc" id="L33">        Foyer foyer = foyerService.addFoyer(f);</span>
-<span class="nc" id="L34">        return foyer;</span>
+
+<span class="nc" id="L34">        return foyerService.addFoyer(f);</span>
     }
 
-    // http://localhost:8089/tpfoyer/foyer/remove-foyer/{foyer-id}
+
     @DeleteMapping(&quot;/remove-foyer/{foyer-id}&quot;)
     public void removeFoyer(@PathVariable(&quot;foyer-id&quot;) Long fId) {
 <span class="nc" id="L40">        foyerService.removeFoyer(fId);</span>
@@ -43,8 +43,8 @@ public class FoyerRestController {
     // http://localhost:8089/tpfoyer/foyer/modify-foyer
     @PutMapping(&quot;/modify-foyer&quot;)
     public Foyer modifyFoyer(@RequestBody Foyer f) {
-<span class="nc" id="L46">        Foyer foyer = foyerService.modifyFoyer(f);</span>
-<span class="nc" id="L47">        return foyer;</span>
+
+<span class="nc" id="L47">        return foyerService.modifyFoyer(f);</span>
     }
 
 }

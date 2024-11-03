@@ -19,14 +19,14 @@ public class ReservationRestController {
     // http://localhost:8089/tpfoyer/reservation/retrieve-all-reservations
     @GetMapping(&quot;/retrieve-all-reservations&quot;)
     public List&lt;Reservation&gt; getReservations() {
-<span class="nc" id="L22">        List&lt;Reservation&gt; listReservations = reservationService.retrieveAllReservations();</span>
-<span class="nc" id="L23">        return listReservations;</span>
+
+<span class="nc" id="L23">        return reservationService.retrieveAllReservations();</span>
     }
     // http://localhost:8089/tpfoyer/reservation/retrieve-reservation/8
     @GetMapping(&quot;/retrieve-reservation/{reservation-id}&quot;)
     public Reservation retrieveReservation(@PathVariable(&quot;reservation-id&quot;) String rId) {
-<span class="nc" id="L28">        Reservation reservation = reservationService.retrieveReservation(rId);</span>
-<span class="nc" id="L29">        return reservation;</span>
+
+<span class="nc" id="L29">        return reservationService.retrieveReservation(rId);</span>
     }
 
 
@@ -54,11 +54,11 @@ public class ReservationRestController {
     // http://localhost:8089/tpfoyer/reservation/add-reservation
     @PostMapping(&quot;/add-reservation&quot;)
     public Reservation addReservation(@RequestBody Reservation r) {
-<span class="nc" id="L57">        Reservation reservation = reservationService.addReservation(r);</span>
-<span class="nc" id="L58">        return reservation;</span>
+
+<span class="nc" id="L58">        return reservationService.addReservation(r);</span>
     }
 
-    // http://localhost:8089/tpfoyer/reservation/remove-reservation/{reservation-id}
+
     @DeleteMapping(&quot;/remove-reservation/{reservation-id}&quot;)
     public void removeReservation(@PathVariable(&quot;reservation-id&quot;) String rId) {
 <span class="nc" id="L64">        reservationService.removeReservation(rId);</span>
@@ -67,8 +67,8 @@ public class ReservationRestController {
     // http://localhost:8089/tpfoyer/reservation/modify-reservation
     @PutMapping(&quot;/modify-reservation&quot;)
     public Reservation modifyReservation(@RequestBody Reservation r) {
-<span class="nc" id="L70">        Reservation reservation = reservationService.modifyReservation(r);</span>
-<span class="nc" id="L71">        return reservation;</span>
+
+<span class="nc" id="L71">        return reservationService.modifyReservation(r);</span>
     }
 
 }

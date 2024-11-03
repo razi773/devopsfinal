@@ -6,24 +6,119 @@
   <component name="ChangeListManager">
     <list default="true" id="4f71b225-4a91-4591-8835-5d0365c5e4af" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/TpFoyerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/TpFoyerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/config/ConfigAOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/config/ConfigAOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/entity/Bloc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tn/esprit/tpfoyer/entity/Bloc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer/service/UserServiceImplMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tn/esprit/tpfoyer/service/UserServiceImplMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/TpFoyerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/config/ConfigAOP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/BlocRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ChambreRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/EtudiantRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/FoyerRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/ReservationRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/control/UniversiteRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Bloc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Chambre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Etudiant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Foyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/TypeChambre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/entity/Universite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/BlocRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ChambreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/EtudiantRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/FoyerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/ReservationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/repository/UniversiteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/BlocServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ChambreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/EtudiantServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/FoyerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IBlocService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IChambreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IEtudiantService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IFoyerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IReservationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/IUniversiteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/ReservationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tn/esprit/tpfoyer/service/UniversiteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.config/ConfigAOP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.config/ConfigAOP.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.config/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.config/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/BlocRestController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/BlocRestController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/ChambreRestController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/ChambreRestController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/EtudiantRestController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/EtudiantRestController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/FoyerRestController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/FoyerRestController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/ReservationRestController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/ReservationRestController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/UniversiteRestController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/UniversiteRestController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.control/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.entity/TypeChambre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.entity/TypeChambre.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.entity/Universite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.entity/Universite.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.entity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.entity/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/BlocServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/BlocServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/ChambreServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/ChambreServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/EtudiantServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/EtudiantServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/FoyerServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/FoyerServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/ReservationServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/ReservationServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/UniversiteServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/UniversiteServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer.service/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer/TpFoyerApplication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer/TpFoyerApplication.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/tn.esprit.tpfoyer/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-tn.esprit.tpfoyer.service.UniversityServiceImplMockTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/tn.esprit.tpfoyer.service.UniversityServiceImplMockTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tn/esprit/tpfoyer/service/UniversityServiceImplMockTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tp-foyer-5.0.0.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,27 +139,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.UniversityServiceImplMockTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UniversityServiceImplMockTest.testBlocChambresAssociation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UniversityServiceImplMockTest.testRetrieveUser.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tp-foyer [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tp-foyer [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;razi&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Desktop/Nouveau dossier (6)&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.UniversityServiceImplMockTest.executor": "Run",
+    "JUnit.UniversityServiceImplMockTest.testBlocChambresAssociation.executor": "Run",
+    "JUnit.UniversityServiceImplMockTest.testRetrieveUser.executor": "Run",
+    "Maven.tp-foyer [clean].executor": "Run",
+    "Maven.tp-foyer [install].executor": "Run",
+    "Maven.tp-foyer [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "razi",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Desktop/Nouveau dossier (7)/CI-CD-khouloud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.UniversityServiceImplMockTest.testBlocChambresAssociation">
     <configuration name="UniversityServiceImplMockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp-foyer" />
@@ -149,6 +245,9 @@
       <workItem from="1730392726487" duration="1762000" />
       <workItem from="1730394508116" duration="2382000" />
       <workItem from="1730481691456" duration="1755000" />
+      <workItem from="1730494321377" duration="623000" />
+      <workItem from="1730586629012" duration="619000" />
+      <workItem from="1730652438000" duration="1483000" />
     </task>
     <servers />
   </component>
