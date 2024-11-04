@@ -14,7 +14,7 @@ services:
   app-timesheet:
     depends_on:
       - mysqldb
-    image: seif/tp-foyer:1.0.0
+    image: seif030/tp-foyer:1.0.0
     #build : ./
     restart: on-failure
     ports:
