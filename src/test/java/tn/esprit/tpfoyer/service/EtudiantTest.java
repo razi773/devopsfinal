@@ -1,27 +1,30 @@
-package tn.esprit.tpfoyer.entity;
+package tn.esprit.tpfoyer.service;
 
 import org.junit.jupiter.api.Test;
+import tn.esprit.tpfoyer.entity.Etudiant;
+import tn.esprit.tpfoyer.entity.Reservation;
+
 import java.util.Date;
 import java.util.HashSet;
-import java.util.Set; // Ajoutez cette ligne
+import java.util.Set;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class EtudiantTest {
+class EtudiantTest {
 
     @Test
-    public void testEtudiantDefaultConstructor() {
+    void testEtudiantDefaultConstructor() {
         Etudiant etudiant = new Etudiant();
 
-        assertThat(etudiant.getIdEtudiant()).isEqualTo(0L);
+        assertThat(etudiant.getIdEtudiant()).isZero();
         assertThat(etudiant.getNomEtudiant()).isNull();
         assertThat(etudiant.getPrenomEtudiant()).isNull();
-        assertThat(etudiant.getCinEtudiant()).isEqualTo(0L);
+        assertThat(etudiant.getCinEtudiant()).isZero();
         assertThat(etudiant.getDateNaissance()).isNull();
         assertThat(etudiant.getReservations()).isNull();
     }
 
     @Test
-    public void testEtudiantParameterizedConstructor() {
+    void testEtudiantParameterizedConstructor() {
         Date dateNaissance = new Date();
         Set<Reservation> reservations = new HashSet<>();
         Etudiant etudiant = new Etudiant(1L, "Dupont", "Jean", 12345678L, dateNaissance, reservations);
@@ -35,7 +38,7 @@ public class EtudiantTest {
     }
 
     @Test
-    public void testSettersAndGetters() {
+    void testSettersAndGetters() {
         Etudiant etudiant = new Etudiant();
 
         etudiant.setIdEtudiant(2L);
@@ -56,7 +59,7 @@ public class EtudiantTest {
     }
 
     @Test
-    public void testToString() {
+    void testToString() {
         Date dateNaissance = new Date();
         Etudiant etudiant = new Etudiant(3L, "Martin", "Pierre", 23456789L, dateNaissance, new HashSet<>());
 
