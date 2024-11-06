@@ -31,8 +31,7 @@ public class Bloc {
     @OneToMany(mappedBy = "bloc")
     @JsonIgnore
     @ToString.Exclude
-    Set<Chambre> chambres = new HashSet<>();
-
+    Set<Chambre> chambres = new HashSet<Chambre>();
 
 }
 

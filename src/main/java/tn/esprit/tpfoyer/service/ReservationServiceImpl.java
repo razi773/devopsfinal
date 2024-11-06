@@ -1,7 +1,6 @@
 package tn.esprit.tpfoyer.service;
 
 
-import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tn.esprit.tpfoyer.entity.Reservation;
@@ -9,7 +8,6 @@ import tn.esprit.tpfoyer.repository.ReservationRepository;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -22,16 +20,8 @@ public class ReservationServiceImpl implements IReservationService {
     }
 
     public Reservation retrieveReservation(String reservationId) {
-        Optional<Reservation> reservationOptional = reservationRepository.findById(reservationId);
-
-        if (reservationOptional.isPresent()) {
-            return reservationOptional.get();
-        } else {
-            // Handle the case where the reservation is not found
-            throw new EntityNotFoundException("Reservation not found with ID: " + reservationId);
-        }
+        return reservationRepository.findById(reservationId).get();
     }
-
 
     public Reservation addReservation(Reservation r) {
         return reservationRepository.save(r);
